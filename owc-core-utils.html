@@ -11,6 +11,26 @@
      */
     class OwcCoreUtils extends Polymer.Element {
         static get is() { return 'owc-core-utils'; }
+        static get properties() {
+            return {
+                ctx: {
+                    type: Object,
+                    value: {}
+                }
+            }
+        }
+
+        /**
+         *   This method is used to set application cntext to the component
+         *
+         * @param {context} application context
+         * @return {null}
+         */
+        setContext(context) {
+            this.ctx = context;        
+
+        }
+
         /**             
          *  Check if the parameter is a string 
          *
