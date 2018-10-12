@@ -20,6 +20,14 @@
             }
         }
 
+
+            ready() {
+                super.ready();
+                var self = this;
+                this._ctx = ApplicationContext.getInstance().context; //Context Assignment
+            }
+
+
         /**
          *   This method is used to set application cntext to the component
          *
